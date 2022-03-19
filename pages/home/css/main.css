@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+}
+
+::selection {
+	background: #7c2052;
+}
+
+a {
+	text-decoration: none;
+	color: #1abcfe;
+}
+
+body {
+	background-color: #0d3133;
+	color: #eee;
+	font-family: 'Open Sans', sans-serif;
+}
+
+main {
+	text-align: center;
+}
+
+.welcome {
+	margin-left: 20%;
+} 
+
+.welcome_logo {
+	float: left;
+}
+
+.welcome_text {
+	margin-top: 2em;
+}
+
+

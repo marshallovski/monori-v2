@@ -1,0 +1,147 @@
+:root {
+	--font: 'Open Sans', sans-serif;
+	--link-clr:  dodgerblue;
+	--def-bg:  #232235;
+	--mono: 'Roboto Mono', monospace;
+	--sel-bg:  indigo;
+	--txt-clr: #eee;
+}
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--def-bg);
+	color: var(--txt-clr);
+	font-family: var(--font);
+	text-rendering: optimizeLegibility;
+}
+
+::selection {
+	background: var(--sel-bg);
+}
+
+a {
+	text-decoration: none;
+	color: var(--link-clr);
+	outline: none;
+}
+
+header {
+	background: #1C1B29;
+	padding: 18px;
+	color: saddlebrown;
+	text-align: left;
+}
+
+ul {
+	display: inline;
+	vertical-align: text-top;
+}
+.mono {
+	font-family: var(--mono);
+}
+.header-item {
+	display: inline;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	vertical-align: text-top;
+}
+.list {
+	/* правка от Nixea */
+	margin-top: 1.5em;
+}
+.shwh {
+	font-weight: bold;
+	font-size: 24px;
+	color: #dfe4ed;
+}
+/* правка от OffMovi */
+/*.list a {
+	 color: #eee !important; 
+}*/
+footer {
+	/* правка от Nixea */
+	background: seagreen;
+	color: var(--txt-clr);
+	text-align: center;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.list_heading {
+	text-align: center;
+}
+
+.tkm-cl {
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.tkm-cl div {
+    margin: 20px;
+    text-align: center;
+
+}
+
+.wh {
+	display: block;
+	margin: auto;
+	background: #0a1014;
+	width: 64%;
+	border-radius: 5px;
+	padding: 14px;
+}
+.wh .whc {
+	text-align: left;
+	margin-left: 0.6em;
+	color: #dbdbdb;
+}
+.wh h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.answ {
+	color: #79c796;
+	font-size: 14.5px;
+}
+
+.qsyt {
+	color: #c4eb81;
+	font-size: 19px;
+}
+
+.otd {
+	color: #eee !important;
+	background: #407280;
+	border-radius: 5px;
+}
+
+.header {
+	text-align: center;
+	margin-top: 1em;
+}
+
+.input-field {
+	padding: 8px;
+	border-radius: 16px;
+	border: 0;
+	margin-top: 0.5em;
+	width: 300px;
+}
+
+.awesomplete {
+	color: #000;
+}

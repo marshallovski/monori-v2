@@ -1,0 +1,25 @@
+{
+  "name": "Monori",
+  "short_name": "Monori",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9e3",
+  "description": "Monori - anonymous imageboard",
+  "icons": [
+    {
+      "src": "monori/layout/home/assets/logo.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "monori/layout/home/assets/logo.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "monori/layout/home/assets/logo.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

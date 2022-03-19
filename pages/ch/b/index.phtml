@@ -1,0 +1,100 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/monori/config.php';
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Monori: /b/ (бред)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Monori - Канал /b/ (бред)">
+	<meta name="description" content="Канал /b/ на Monori.">
+	<meta name="keywords" content="<?php echo Config::keywords; ?>">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="Russian">
+	<meta name="revisit-after" content="1 days">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/ch.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css">
+</head>
+
+<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
+	<noscript>
+		<h1 style="text-align: center;">вруби JavaScript пожалуйста</h1>
+		<style>
+			.sidebar,
+			.content {
+				display: none;
+			}
+		</style>
+	</noscript>
+	<div class="sidebar">
+		<a href="/"><img src="/favicon.ico" alt="Monori logo" style="width: 50%; display: block; margin: auto;"></a>
+		<br>
+		<p class="active">Общее</p>
+		<a href="/ch/b/">/vg/ - игры</a>
+		<p class="active">Японская культура</p>
+		<a href="/ch/a">/a/ - аниме</a>
+		<a href="/ch/ma">/ma/ - манга</a>
+		<a href="/ch/da">/da/ - аниме дисскусии</a>
+		<a href="/ch/jpc" style="font-size: 14px;">/jpc/ - японская культура</a>
+
+		<p class="active">Социальное</p>
+		<a href="/ch/tv/">/tv/ - кино</a>
+		<a href="/ch/news/">/news/ - новости в мире</a>
+		<a href="/ch/bk/">/bk/ - книги</a>
+		<a href="/ch/nl/">/nl/ - новеллы</a>
+		<a href="/ch/th/">/th/ - Tohou Project</a>
+		<a href="/ch/mus/">/mus/ - музыка</a>
+		<!-- надо будет реализовать парсинг... -->
+	</div>
+	<div class="content">
+		<h1>/b/: Бред</h1>
+		<p style="margin-left: 0.5em;"><?php echo Config::chcfg; ?></p>
+		<br>
+		<p id="showForm">Показать форму поста</p>
+
+		<br>
+		<br>
+		<br>
+		<div class="postMSGform" id="postform">
+			<h1 class="msgformhn">Форма отправки поста</h1>
+			<p id="hideForm">[ Скрыть форму ]</p>
+			<br>
+			<br>
+			<p>Никнейм:</p> <input type="text" name="nickname" value="Аноним">
+			<br>
+			<br>
+			<p>Тема треда:</p> <input type="text" name="subj">
+			<br>
+			<p style="font-size: 12px;"><input type="checkbox" name="" style="margin-right: 1em;">Не поднимать тред</p>
+			<br>
+			<br>
+			<p style="vertical-align: top;">Сообщение:</p> <textarea id="msgcontent"></textarea>
+			<br>
+			<br>
+			<p>Файл (не обязательно):</p> <input type="file" name="fileSelect">
+			<br>
+			<br>
+			<h3>Капча:</h3>
+			<br>
+			<div class="h-captcha" data-sitekey=""></div>
+		</div>
+		<div class="postContent">
+			<p><span id="nickname"><b>Аноним</b></span> - <span id="datre">11.17.2021 14:37</span> -> <span id="thnumber">#0001</span></p>
+			<img class="AttImg" src="https://cdn.discordapp.com/attachments/887722418729254933/910506934786990110/1595380_screenshots_20211012130426_1.jpg" rel="shadowbox">
+		</div>
+		<p id="toTop">Вверх</p>
+	</div>
+	<script src="../js/utilitites.js"></script>
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</body>
+
+</html>
